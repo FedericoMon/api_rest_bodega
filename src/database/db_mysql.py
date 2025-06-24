@@ -1,5 +1,5 @@
 from decouple import config
-from flask_mysqldb import MySQL
+#from flask_mysqldb import MySQL
 import pymysql
 import traceback
 
