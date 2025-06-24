@@ -1,0 +1,766 @@
+2025-06-06 10:36:10 | ERROR | 'cliente_id'
+2025-06-06 10:36:10 | ERROR | Traceback (most recent call last):
+  File "C:\Users\fedgr\Desktop\api_rest_bodega\src\routes\CustomersTransaccionRoutes.py", line 312, in updateTransCustomer
+    int(request.json['cliente_id']),
+       ~~~~~~~~~~~~^^^^^^^^^^^^^^
+KeyError: 'cliente_id'
+
+2025-06-06 10:40:52 | ERROR | 'Descripcion'
+2025-06-06 10:40:52 | ERROR | Traceback (most recent call last):
+  File "C:\Users\fedgr\Desktop\api_rest_bodega\src\routes\CustomersTransaccionRoutes.py", line 246, in createTransCustomer
+    request.json['Descripcion'],
+    ~~~~~~~~~~~~^^^^^^^^^^^^^^^
+KeyError: 'Descripcion'
+
+2025-06-06 10:41:07 | ERROR | 'Descripcion'
+2025-06-06 10:41:07 | ERROR | Traceback (most recent call last):
+  File "C:\Users\fedgr\Desktop\api_rest_bodega\src\routes\CustomersTransaccionRoutes.py", line 246, in createTransCustomer
+    request.json['Descripcion'],
+    ~~~~~~~~~~~~^^^^^^^^^^^^^^^
+KeyError: 'Descripcion'
+
+2025-06-06 13:33:14 | ERROR | name 'datetime' is not defined
+2025-06-06 13:33:14 | ERROR | Traceback (most recent call last):
+  File "C:\Users\fedgr\Desktop\api_rest_bodega\src\routes\CustomersTransaccionRoutes.py", line 217, in createTransCustomer
+    fecha = datetime.now().strftime("%Y-%m-%d")
+            ^^^^^^^^
+NameError: name 'datetime' is not defined. Did you forget to import 'datetime'
+
+2025-06-06 13:33:16 | ERROR | name 'datetime' is not defined
+2025-06-06 13:33:16 | ERROR | Traceback (most recent call last):
+  File "C:\Users\fedgr\Desktop\api_rest_bodega\src\routes\CustomersTransaccionRoutes.py", line 217, in createTransCustomer
+    fecha = datetime.now().strftime("%Y-%m-%d")
+            ^^^^^^^^
+NameError: name 'datetime' is not defined. Did you forget to import 'datetime'
+
+2025-06-06 13:33:19 | ERROR | name 'datetime' is not defined
+2025-06-06 13:33:19 | ERROR | Traceback (most recent call last):
+  File "C:\Users\fedgr\Desktop\api_rest_bodega\src\routes\CustomersTransaccionRoutes.py", line 217, in createTransCustomer
+    fecha = datetime.now().strftime("%Y-%m-%d")
+            ^^^^^^^^
+NameError: name 'datetime' is not defined. Did you forget to import 'datetime'
+
+2025-06-06 14:53:12 | ERROR | name 'get_db_connection' is not defined
+2025-06-06 14:53:12 | ERROR | Traceback (most recent call last):
+  File "C:\Users\fedgr\Desktop\api_rest_bodega\src\routes\ProvidersRoutes.py", line 17, in listar_provedores
+    conexion = get_db_connection()
+               ^^^^^^^^^^^^^^^^^
+NameError: name 'get_db_connection' is not defined. Did you mean: 'get_connection'?
+
+2025-06-06 14:54:23 | ERROR | name 'get_db_connection' is not defined
+2025-06-06 14:54:23 | ERROR | Traceback (most recent call last):
+  File "C:\Users\fedgr\Desktop\api_rest_bodega\src\routes\ProvidersRoutes.py", line 17, in listar_provedores
+    conexion = get_db_connection()
+               ^^^^^^^^^^^^^^^^^
+NameError: name 'get_db_connection' is not defined. Did you mean: 'get_connection'?
+
+2025-06-06 15:14:40 | ERROR | createTransCustomer() takes 0 positional arguments but 1 was given
+2025-06-06 15:14:40 | ERROR | Traceback (most recent call last):
+  File "C:\Users\fedgr\Desktop\api_rest_bodega\src\routes\CustomersTransaccionRoutes.py", line 209, in createTransCustomer
+    return createTransCustomer(data)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^
+TypeError: createTransCustomer() takes 0 positional arguments but 1 was given
+
+2025-06-06 15:15:00 | ERROR | createTransCustomer() takes 0 positional arguments but 1 was given
+2025-06-06 15:15:00 | ERROR | Traceback (most recent call last):
+  File "C:\Users\fedgr\Desktop\api_rest_bodega\src\routes\CustomersTransaccionRoutes.py", line 209, in createTransCustomer
+    return createTransCustomer(data)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^
+TypeError: createTransCustomer() takes 0 positional arguments but 1 was given
+
+2025-06-06 15:20:00 | ERROR | 'dict' object is not callable
+2025-06-06 15:20:00 | ERROR | Traceback (most recent call last):
+  File "C:\Users\fedgr\Desktop\api_rest_bodega\src\routes\CustomersTransaccionRoutes.py", line 227, in createTransCustomer
+    fecha = data('fecha', None)
+            ^^^^^^^^^^^^^^^^^^^
+TypeError: 'dict' object is not callable
+
+2025-06-06 15:20:00 | ERROR | Object of type TypeError is not JSON serializable
+2025-06-06 15:20:00 | ERROR | Traceback (most recent call last):
+  File "C:\Users\fedgr\Desktop\api_rest_bodega\src\routes\CustomersTransaccionRoutes.py", line 227, in createTransCustomer
+    fecha = data('fecha', None)
+            ^^^^^^^^^^^^^^^^^^^
+TypeError: 'dict' object is not callable
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "C:\Users\fedgr\Desktop\api_rest_bodega\src\routes\CustomersTransaccionRoutes.py", line 209, in createTransCustomer
+    return createTransCustomer(data)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\fedgr\Desktop\api_rest_bodega\src\routes\CustomersTransaccionRoutes.py", line 283, in createTransCustomer
+    return jsonify({'message': ex, 'success': False})
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\fedgr\Desktop\api_rest_bodega\venv\Lib\site-packages\flask\json\__init__.py", line 170, in jsonify
+    return current_app.json.response(*args, **kwargs)  # type: ignore[return-value]
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\fedgr\Desktop\api_rest_bodega\venv\Lib\site-packages\flask\json\provider.py", line 214, in response
+    f"{self.dumps(obj, **dump_args)}\n", mimetype=self.mimetype
+       ^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\fedgr\Desktop\api_rest_bodega\venv\Lib\site-packages\flask\json\provider.py", line 179, in dumps
+    return json.dumps(obj, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\fedgr\AppData\Local\Programs\Python\Python312\Lib\json\__init__.py", line 238, in dumps
+    **kw).encode(obj)
+          ^^^^^^^^^^^
+  File "C:\Users\fedgr\AppData\Local\Programs\Python\Python312\Lib\json\encoder.py", line 202, in encode
+    chunks = list(chunks)
+             ^^^^^^^^^^^^
+  File "C:\Users\fedgr\AppData\Local\Programs\Python\Python312\Lib\json\encoder.py", line 432, in _iterencode
+    yield from _iterencode_dict(o, _current_indent_level)
+  File "C:\Users\fedgr\AppData\Local\Programs\Python\Python312\Lib\json\encoder.py", line 406, in _iterencode_dict
+    yield from chunks
+  File "C:\Users\fedgr\AppData\Local\Programs\Python\Python312\Lib\json\encoder.py", line 439, in _iterencode
+    o = _default(o)
+        ^^^^^^^^^^^
+  File "C:\Users\fedgr\Desktop\api_rest_bodega\venv\Lib\site-packages\flask\json\provider.py", line 121, in _default
+    raise TypeError(f"Object of type {type(o).__name__} is not JSON serializable")
+TypeError: Object of type TypeError is not JSON serializable
+
+2025-06-06 15:20:19 | ERROR | 'dict' object is not callable
+2025-06-06 15:20:19 | ERROR | Traceback (most recent call last):
+  File "C:\Users\fedgr\Desktop\api_rest_bodega\src\routes\CustomersTransaccionRoutes.py", line 227, in createTransCustomer
+    fecha = data('fecha', None)
+            ^^^^^^^^^^^^^^^^^^^
+TypeError: 'dict' object is not callable
+
+2025-06-06 15:20:19 | ERROR | Object of type TypeError is not JSON serializable
+2025-06-06 15:20:19 | ERROR | Traceback (most recent call last):
+  File "C:\Users\fedgr\Desktop\api_rest_bodega\src\routes\CustomersTransaccionRoutes.py", line 227, in createTransCustomer
+    fecha = data('fecha', None)
+            ^^^^^^^^^^^^^^^^^^^
+TypeError: 'dict' object is not callable
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "C:\Users\fedgr\Desktop\api_rest_bodega\src\routes\CustomersTransaccionRoutes.py", line 209, in createTransCustomer
+    return createTransCustomer(data)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\fedgr\Desktop\api_rest_bodega\src\routes\CustomersTransaccionRoutes.py", line 283, in createTransCustomer
+    return jsonify({'message': ex, 'success': False})
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\fedgr\Desktop\api_rest_bodega\venv\Lib\site-packages\flask\json\__init__.py", line 170, in jsonify
+    return current_app.json.response(*args, **kwargs)  # type: ignore[return-value]
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\fedgr\Desktop\api_rest_bodega\venv\Lib\site-packages\flask\json\provider.py", line 214, in response
+    f"{self.dumps(obj, **dump_args)}\n", mimetype=self.mimetype
+       ^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\fedgr\Desktop\api_rest_bodega\venv\Lib\site-packages\flask\json\provider.py", line 179, in dumps
+    return json.dumps(obj, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\fedgr\AppData\Local\Programs\Python\Python312\Lib\json\__init__.py", line 238, in dumps
+    **kw).encode(obj)
+          ^^^^^^^^^^^
+  File "C:\Users\fedgr\AppData\Local\Programs\Python\Python312\Lib\json\encoder.py", line 202, in encode
+    chunks = list(chunks)
+             ^^^^^^^^^^^^
+  File "C:\Users\fedgr\AppData\Local\Programs\Python\Python312\Lib\json\encoder.py", line 432, in _iterencode
+    yield from _iterencode_dict(o, _current_indent_level)
+  File "C:\Users\fedgr\AppData\Local\Programs\Python\Python312\Lib\json\encoder.py", line 406, in _iterencode_dict
+    yield from chunks
+  File "C:\Users\fedgr\AppData\Local\Programs\Python\Python312\Lib\json\encoder.py", line 439, in _iterencode
+    o = _default(o)
+        ^^^^^^^^^^^
+  File "C:\Users\fedgr\Desktop\api_rest_bodega\venv\Lib\site-packages\flask\json\provider.py", line 121, in _default
+    raise TypeError(f"Object of type {type(o).__name__} is not JSON serializable")
+TypeError: Object of type TypeError is not JSON serializable
+
+2025-06-06 15:24:04 | ERROR | 'dict' object is not callable
+2025-06-06 15:24:04 | ERROR | Traceback (most recent call last):
+  File "C:\Users\fedgr\Desktop\api_rest_bodega\src\routes\CustomersTransaccionRoutes.py", line 227, in createTransCustomer
+    fecha = data('fecha', None)
+            ^^^^^^^^^^^^^^^^^^^
+TypeError: 'dict' object is not callable
+
+2025-06-06 15:24:04 | ERROR | Object of type TypeError is not JSON serializable
+2025-06-06 15:24:04 | ERROR | Traceback (most recent call last):
+  File "C:\Users\fedgr\Desktop\api_rest_bodega\src\routes\CustomersTransaccionRoutes.py", line 227, in createTransCustomer
+    fecha = data('fecha', None)
+            ^^^^^^^^^^^^^^^^^^^
+TypeError: 'dict' object is not callable
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "C:\Users\fedgr\Desktop\api_rest_bodega\src\routes\CustomersTransaccionRoutes.py", line 209, in createTransCustomer
+    return createTransCustomer(data)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\fedgr\Desktop\api_rest_bodega\src\routes\CustomersTransaccionRoutes.py", line 283, in createTransCustomer
+    return jsonify({'message': ex, 'success': False})
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\fedgr\Desktop\api_rest_bodega\venv\Lib\site-packages\flask\json\__init__.py", line 170, in jsonify
+    return current_app.json.response(*args, **kwargs)  # type: ignore[return-value]
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\fedgr\Desktop\api_rest_bodega\venv\Lib\site-packages\flask\json\provider.py", line 214, in response
+    f"{self.dumps(obj, **dump_args)}\n", mimetype=self.mimetype
+       ^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\fedgr\Desktop\api_rest_bodega\venv\Lib\site-packages\flask\json\provider.py", line 179, in dumps
+    return json.dumps(obj, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\fedgr\AppData\Local\Programs\Python\Python312\Lib\json\__init__.py", line 238, in dumps
+    **kw).encode(obj)
+          ^^^^^^^^^^^
+  File "C:\Users\fedgr\AppData\Local\Programs\Python\Python312\Lib\json\encoder.py", line 202, in encode
+    chunks = list(chunks)
+             ^^^^^^^^^^^^
+  File "C:\Users\fedgr\AppData\Local\Programs\Python\Python312\Lib\json\encoder.py", line 432, in _iterencode
+    yield from _iterencode_dict(o, _current_indent_level)
+  File "C:\Users\fedgr\AppData\Local\Programs\Python\Python312\Lib\json\encoder.py", line 406, in _iterencode_dict
+    yield from chunks
+  File "C:\Users\fedgr\AppData\Local\Programs\Python\Python312\Lib\json\encoder.py", line 439, in _iterencode
+    o = _default(o)
+        ^^^^^^^^^^^
+  File "C:\Users\fedgr\Desktop\api_rest_bodega\venv\Lib\site-packages\flask\json\provider.py", line 121, in _default
+    raise TypeError(f"Object of type {type(o).__name__} is not JSON serializable")
+TypeError: Object of type TypeError is not JSON serializable
+
+2025-06-06 15:31:57 | ERROR | 'dict' object is not callable
+2025-06-06 15:31:57 | ERROR | Traceback (most recent call last):
+  File "C:\Users\fedgr\Desktop\api_rest_bodega\src\routes\CustomersTransaccionRoutes.py", line 294, in updateTransCustomer
+    fecha = data('fecha', None)
+            ^^^^^^^^^^^^^^^^^^^
+TypeError: 'dict' object is not callable
+
+2025-06-06 15:31:57 | ERROR | Object of type TypeError is not JSON serializable
+2025-06-06 15:31:57 | ERROR | Traceback (most recent call last):
+  File "C:\Users\fedgr\Desktop\api_rest_bodega\src\routes\CustomersTransaccionRoutes.py", line 294, in updateTransCustomer
+    fecha = data('fecha', None)
+            ^^^^^^^^^^^^^^^^^^^
+TypeError: 'dict' object is not callable
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "C:\Users\fedgr\Desktop\api_rest_bodega\src\routes\CustomersTransaccionRoutes.py", line 207, in createTransCustomer
+    return updateTransCustomer(data)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\fedgr\Desktop\api_rest_bodega\src\routes\CustomersTransaccionRoutes.py", line 350, in updateTransCustomer
+    return jsonify({'message': ex, 'success': False})
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\fedgr\Desktop\api_rest_bodega\venv\Lib\site-packages\flask\json\__init__.py", line 170, in jsonify
+    return current_app.json.response(*args, **kwargs)  # type: ignore[return-value]
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\fedgr\Desktop\api_rest_bodega\venv\Lib\site-packages\flask\json\provider.py", line 214, in response
+    f"{self.dumps(obj, **dump_args)}\n", mimetype=self.mimetype
+       ^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\fedgr\Desktop\api_rest_bodega\venv\Lib\site-packages\flask\json\provider.py", line 179, in dumps
+    return json.dumps(obj, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\fedgr\AppData\Local\Programs\Python\Python312\Lib\json\__init__.py", line 238, in dumps
+    **kw).encode(obj)
+          ^^^^^^^^^^^
+  File "C:\Users\fedgr\AppData\Local\Programs\Python\Python312\Lib\json\encoder.py", line 202, in encode
+    chunks = list(chunks)
+             ^^^^^^^^^^^^
+  File "C:\Users\fedgr\AppData\Local\Programs\Python\Python312\Lib\json\encoder.py", line 432, in _iterencode
+    yield from _iterencode_dict(o, _current_indent_level)
+  File "C:\Users\fedgr\AppData\Local\Programs\Python\Python312\Lib\json\encoder.py", line 406, in _iterencode_dict
+    yield from chunks
+  File "C:\Users\fedgr\AppData\Local\Programs\Python\Python312\Lib\json\encoder.py", line 439, in _iterencode
+    o = _default(o)
+        ^^^^^^^^^^^
+  File "C:\Users\fedgr\Desktop\api_rest_bodega\venv\Lib\site-packages\flask\json\provider.py", line 121, in _default
+    raise TypeError(f"Object of type {type(o).__name__} is not JSON serializable")
+TypeError: Object of type TypeError is not JSON serializable
+
+2025-06-06 18:58:08 | ERROR | name 'pymysql' is not defined
+2025-06-06 18:58:08 | ERROR | Traceback (most recent call last):
+  File "C:\Users\fedgr\Desktop\api_rest_bodega\src\routes\ProvidersTransaccionRoutes.py", line 18, in listar_Transaccion_provedores
+    cursor = conexion.cursor(pymysql.cursors.DictCursor)
+                             ^^^^^^^
+NameError: name 'pymysql' is not defined
+
+2025-06-06 18:58:37 | ERROR | name 'pymysql' is not defined
+2025-06-06 18:58:37 | ERROR | Traceback (most recent call last):
+  File "C:\Users\fedgr\Desktop\api_rest_bodega\src\routes\ProvidersTransaccionRoutes.py", line 18, in listar_Transaccion_provedores
+    cursor = conexion.cursor(pymysql.cursors.DictCursor)
+                             ^^^^^^^
+NameError: name 'pymysql' is not defined
+
+2025-06-06 19:01:00 | ERROR | name 'pymysql' is not defined
+2025-06-06 19:01:00 | ERROR | Traceback (most recent call last):
+  File "C:\Users\fedgr\Desktop\api_rest_bodega\src\routes\ProvidersTransaccionRoutes.py", line 18, in listar_Transaccion_provedores
+    cursor = conexion.cursor(pymysql.cursors.DictCursor)
+                             ^^^^^^^
+NameError: name 'pymysql' is not defined
+
+2025-06-06 19:01:14 | ERROR | name 'pymysql' is not defined
+2025-06-06 19:01:14 | ERROR | Traceback (most recent call last):
+  File "C:\Users\fedgr\Desktop\api_rest_bodega\src\routes\ProvidersTransaccionRoutes.py", line 18, in listar_Transaccion_provedores
+    cursor = conexion.cursor(pymysql.cursors.DictCursor)
+                             ^^^^^^^
+NameError: name 'pymysql' is not defined
+
+2025-06-06 19:01:34 | ERROR | name 'pymysql' is not defined
+2025-06-06 19:01:34 | ERROR | Traceback (most recent call last):
+  File "C:\Users\fedgr\Desktop\api_rest_bodega\src\routes\ProvidersTransaccionRoutes.py", line 18, in listar_Transaccion_provedores
+    cursor = conexion.cursor(pymysql.cursors.DictCursor)
+                             ^^^^^^^
+NameError: name 'pymysql' is not defined
+
+2025-06-06 19:02:26 | ERROR | name 'pymysql' is not defined
+2025-06-06 19:02:26 | ERROR | Traceback (most recent call last):
+  File "C:\Users\fedgr\Desktop\api_rest_bodega\src\routes\ProvidersTransaccionRoutes.py", line 18, in listar_Transaccion_provedores
+    cursor = conexion.cursor(pymysql.cursors.DictCursor)
+                             ^^^^^^^
+NameError: name 'pymysql' is not defined
+
+2025-06-06 19:04:59 | ERROR | name 'pymysql' is not defined
+2025-06-06 19:04:59 | ERROR | Traceback (most recent call last):
+  File "C:\Users\fedgr\Desktop\api_rest_bodega\src\routes\ProvidersTransaccionRoutes.py", line 18, in listar_Transaccion_provedores
+    cursor = conexion.cursor(pymysql.cursors.DictCursor)
+                             ^^^^^^^
+NameError: name 'pymysql' is not defined
+
+2025-06-06 19:07:24 | ERROR | name 'pymysql' is not defined
+2025-06-06 19:07:24 | ERROR | Traceback (most recent call last):
+  File "C:\Users\fedgr\Desktop\api_rest_bodega\src\routes\ProvidersTransaccionRoutes.py", line 18, in listar_Transaccion_provedores
+    cursor = conexion.cursor(pymysql.cursors.DictCursor)
+                             ^^^^^^^
+NameError: name 'pymysql' is not defined
+
+2025-06-06 19:09:48 | ERROR | name 'pymysql' is not defined
+2025-06-06 19:09:48 | ERROR | Traceback (most recent call last):
+  File "C:\Users\fedgr\Desktop\api_rest_bodega\src\routes\ProvidersTransaccionRoutes.py", line 18, in listar_Transaccion_provedores
+    cursor = conexion.cursor(pymysql.cursors.DictCursor)
+                             ^^^^^^^
+NameError: name 'pymysql' is not defined
+
+2025-06-06 19:10:17 | ERROR | name 'pymysql' is not defined
+2025-06-06 19:10:17 | ERROR | Traceback (most recent call last):
+  File "C:\Users\fedgr\Desktop\api_rest_bodega\src\routes\ProvidersTransaccionRoutes.py", line 18, in listar_Transaccion_provedores
+    cursor = conexion.cursor(pymysql.cursors.DictCursor)
+                             ^^^^^^^
+NameError: name 'pymysql' is not defined
+
+2025-06-06 19:12:17 | ERROR | name 'pymysql' is not defined
+2025-06-06 19:12:17 | ERROR | Traceback (most recent call last):
+  File "C:\Users\fedgr\Desktop\api_rest_bodega\src\routes\ProvidersTransaccionRoutes.py", line 18, in listar_Transaccion_provedores
+    cursor = conexion.cursor(pymysql.cursors.DictCursor)
+                             ^^^^^^^
+NameError: name 'pymysql' is not defined
+
+2025-06-06 19:14:12 | ERROR | name 'pymysql' is not defined
+2025-06-06 19:14:12 | ERROR | Traceback (most recent call last):
+  File "C:\Users\fedgr\Desktop\api_rest_bodega\src\routes\ProvidersTransaccionRoutes.py", line 18, in listar_Transaccion_provedores
+    cursor = conexion.cursor(pymysql.cursors.DictCursor)
+                             ^^^^^^^
+NameError: name 'pymysql' is not defined
+
+2025-06-06 19:17:13 | ERROR | name 'pymysql' is not defined
+2025-06-06 19:17:13 | ERROR | Traceback (most recent call last):
+  File "C:\Users\fedgr\Desktop\api_rest_bodega\src\routes\ProvidersTransaccionRoutes.py", line 18, in listar_Transaccion_provedores
+    cursor = conexion.cursor(pymysql.cursors.DictCursor)
+                             ^^^^^^^
+NameError: name 'pymysql' is not defined
+
+2025-06-11 13:40:19 | ERROR | name 'cursor' is not defined
+2025-06-11 13:40:19 | ERROR | Traceback (most recent call last):
+  File "C:\Users\fedgr\Desktop\api_rest_bodega\src\routes\filterDashboardRoutes.py", line 44, in listar_saldo_clientes
+    cursor.execute(sql_clients)
+    ^^^^^^
+NameError: name 'cursor' is not defined
+
+2025-06-11 13:40:53 | ERROR | name 'cursor' is not defined
+2025-06-11 13:40:53 | ERROR | Traceback (most recent call last):
+  File "C:\Users\fedgr\Desktop\api_rest_bodega\src\routes\filterDashboardRoutes.py", line 44, in listar_saldo_clientes
+    cursor.execute(sql_clients)
+    ^^^^^^
+NameError: name 'cursor' is not defined
+
+2025-06-11 13:41:34 | ERROR | name 'cursor' is not defined
+2025-06-11 13:41:34 | ERROR | Traceback (most recent call last):
+  File "C:\Users\fedgr\Desktop\api_rest_bodega\src\routes\filterDashboardRoutes.py", line 44, in listar_saldo_clientes
+    cursor.execute(sql_clients)
+    ^^^^^^
+NameError: name 'cursor' is not defined
+
+2025-06-11 13:41:38 | ERROR | name 'cursor' is not defined
+2025-06-11 13:41:38 | ERROR | Traceback (most recent call last):
+  File "C:\Users\fedgr\Desktop\api_rest_bodega\src\routes\filterDashboardRoutes.py", line 44, in listar_saldo_clientes
+    cursor.execute(sql_clients)
+    ^^^^^^
+NameError: name 'cursor' is not defined
+
+2025-06-11 13:41:48 | ERROR | name 'cursor' is not defined
+2025-06-11 13:41:48 | ERROR | Traceback (most recent call last):
+  File "C:\Users\fedgr\Desktop\api_rest_bodega\src\routes\filterDashboardRoutes.py", line 44, in listar_saldo_clientes
+    cursor.execute(sql_clients)
+    ^^^^^^
+NameError: name 'cursor' is not defined
+
+2025-06-13 13:49:05 | ERROR | name 'sql_paginated' is not defined
+2025-06-13 13:49:05 | ERROR | Traceback (most recent call last):
+  File "C:\Users\fedgr\Desktop\api_rest_bodega\src\routes\grafic_gananciasRoutes.py", line 47, in listar_ganancias
+    cursor.execute(sql_paginated, params)
+                   ^^^^^^^^^^^^^
+NameError: name 'sql_paginated' is not defined
+
+2025-06-13 13:53:13 | ERROR | name 'sql_paginated' is not defined
+2025-06-13 13:53:13 | ERROR | Traceback (most recent call last):
+  File "C:\Users\fedgr\Desktop\api_rest_bodega\src\routes\grafic_gananciasRoutes.py", line 47, in listar_ganancias
+    cursor.execute(sql_paginated, params)
+                   ^^^^^^^^^^^^^
+NameError: name 'sql_paginated' is not defined
+
+2025-06-13 13:55:27 | ERROR | name 'sql_paginated' is not defined
+2025-06-13 13:55:27 | ERROR | Traceback (most recent call last):
+  File "C:\Users\fedgr\Desktop\api_rest_bodega\src\routes\grafic_gananciasRoutes.py", line 47, in listar_ganancias
+    cursor.execute(sql_paginated, params)
+                   ^^^^^^^^^^^^^
+NameError: name 'sql_paginated' is not defined
+
+2025-06-13 13:56:24 | ERROR | name 'sql_paginated' is not defined
+2025-06-13 13:56:24 | ERROR | Traceback (most recent call last):
+  File "C:\Users\fedgr\Desktop\api_rest_bodega\src\routes\grafic_gananciasRoutes.py", line 47, in listar_ganancias
+    cursor.execute(sql_paginated, params)
+                   ^^^^^^^^^^^^^
+NameError: name 'sql_paginated' is not defined
+
+2025-06-13 14:00:28 | ERROR | name 'sql_paginated' is not defined
+2025-06-13 14:00:28 | ERROR | Traceback (most recent call last):
+  File "C:\Users\fedgr\Desktop\api_rest_bodega\src\routes\grafic_gananciasRoutes.py", line 47, in listar_ganancias
+    cursor.execute(sql_paginated, params)
+                   ^^^^^^^^^^^^^
+NameError: name 'sql_paginated' is not defined
+
+2025-06-13 14:05:42 | ERROR | name 'sql_paginated' is not defined
+2025-06-13 14:05:42 | ERROR | Traceback (most recent call last):
+  File "C:\Users\fedgr\Desktop\api_rest_bodega\src\routes\grafic_gananciasRoutes.py", line 47, in listar_ganancias
+    cursor.execute(sql_paginated, params)
+                   ^^^^^^^^^^^^^
+NameError: name 'sql_paginated' is not defined
+
+2025-06-13 14:05:55 | ERROR | name 'sql_paginated' is not defined
+2025-06-13 14:05:55 | ERROR | Traceback (most recent call last):
+  File "C:\Users\fedgr\Desktop\api_rest_bodega\src\routes\grafic_gananciasRoutes.py", line 47, in listar_ganancias
+    cursor.execute(sql_paginated, params)
+                   ^^^^^^^^^^^^^
+NameError: name 'sql_paginated' is not defined
+
+2025-06-13 14:06:04 | ERROR | name 'sql_paginated' is not defined
+2025-06-13 14:06:05 | ERROR | Traceback (most recent call last):
+  File "C:\Users\fedgr\Desktop\api_rest_bodega\src\routes\grafic_gananciasRoutes.py", line 47, in listar_ganancias
+    cursor.execute(sql_paginated, params)
+                   ^^^^^^^^^^^^^
+NameError: name 'sql_paginated' is not defined
+
+2025-06-13 14:06:38 | ERROR | name 'sql_paginated' is not defined
+2025-06-13 14:06:38 | ERROR | Traceback (most recent call last):
+  File "C:\Users\fedgr\Desktop\api_rest_bodega\src\routes\grafic_gananciasRoutes.py", line 47, in listar_ganancias
+    cursor.execute(sql_paginated, params)
+                   ^^^^^^^^^^^^^
+NameError: name 'sql_paginated' is not defined
+
+2025-06-13 14:07:21 | ERROR | name 'sql_paginated' is not defined
+2025-06-13 14:07:21 | ERROR | Traceback (most recent call last):
+  File "C:\Users\fedgr\Desktop\api_rest_bodega\src\routes\grafic_gananciasRoutes.py", line 47, in listar_ganancias
+    cursor.execute(sql_paginated, params)
+                   ^^^^^^^^^^^^^
+NameError: name 'sql_paginated' is not defined
+
+2025-06-13 14:07:21 | ERROR | name 'sql_paginated' is not defined
+2025-06-13 14:07:21 | ERROR | Traceback (most recent call last):
+  File "C:\Users\fedgr\Desktop\api_rest_bodega\src\routes\grafic_gananciasRoutes.py", line 47, in listar_ganancias
+    cursor.execute(sql_paginated, params)
+                   ^^^^^^^^^^^^^
+NameError: name 'sql_paginated' is not defined
+
+2025-06-13 14:09:23 | ERROR | tuple indices must be integers or slices, not str
+2025-06-13 14:09:23 | ERROR | Traceback (most recent call last):
+  File "C:\Users\fedgr\Desktop\api_rest_bodega\src\routes\grafic_gananciasRoutes.py", line 55, in listar_ganancias
+    fecha_diaria= fila["fecha"]
+                  ~~~~^^^^^^^^^
+TypeError: tuple indices must be integers or slices, not str
+
+2025-06-13 14:09:23 | ERROR | tuple indices must be integers or slices, not str
+2025-06-13 14:09:23 | ERROR | Traceback (most recent call last):
+  File "C:\Users\fedgr\Desktop\api_rest_bodega\src\routes\grafic_gananciasRoutes.py", line 55, in listar_ganancias
+    fecha_diaria= fila["fecha"]
+                  ~~~~^^^^^^^^^
+TypeError: tuple indices must be integers or slices, not str
+
+2025-06-13 14:10:54 | ERROR | tuple indices must be integers or slices, not str
+2025-06-13 14:10:54 | ERROR | Traceback (most recent call last):
+  File "C:\Users\fedgr\Desktop\api_rest_bodega\src\routes\grafic_gananciasRoutes.py", line 55, in listar_ganancias
+    fecha_diaria= fila["fecha"]
+                  ~~~~^^^^^^^^^
+TypeError: tuple indices must be integers or slices, not str
+
+2025-06-13 14:10:55 | ERROR | tuple indices must be integers or slices, not str
+2025-06-13 14:10:55 | ERROR | Traceback (most recent call last):
+  File "C:\Users\fedgr\Desktop\api_rest_bodega\src\routes\grafic_gananciasRoutes.py", line 55, in listar_ganancias
+    fecha_diaria= fila["fecha"]
+                  ~~~~^^^^^^^^^
+TypeError: tuple indices must be integers or slices, not str
+
+2025-06-13 14:13:12 | ERROR | tuple indices must be integers or slices, not str
+2025-06-13 14:13:12 | ERROR | Traceback (most recent call last):
+  File "C:\Users\fedgr\Desktop\api_rest_bodega\src\routes\grafic_gananciasRoutes.py", line 55, in listar_ganancias
+    fecha_diaria= fila["fecha"]
+                  ~~~~^^^^^^^^^
+TypeError: tuple indices must be integers or slices, not str
+
+2025-06-13 14:13:12 | ERROR | tuple indices must be integers or slices, not str
+2025-06-13 14:13:12 | ERROR | Traceback (most recent call last):
+  File "C:\Users\fedgr\Desktop\api_rest_bodega\src\routes\grafic_gananciasRoutes.py", line 55, in listar_ganancias
+    fecha_diaria= fila["fecha"]
+                  ~~~~^^^^^^^^^
+TypeError: tuple indices must be integers or slices, not str
+
+2025-06-13 22:57:56 | ERROR | not enough arguments for format string
+2025-06-13 22:57:56 | ERROR | Traceback (most recent call last):
+  File "C:\Users\fedgr\Desktop\api_rest_bodega\src\routes\grafic_gananciasRoutes.py", line 141, in listar_ganancias
+    cursor.execute(sql, params)
+  File "C:\Users\fedgr\Desktop\api_rest_bodega\venv\Lib\site-packages\pymysql\cursors.py", line 151, in execute
+    query = self.mogrify(query, args)
+            ^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\fedgr\Desktop\api_rest_bodega\venv\Lib\site-packages\pymysql\cursors.py", line 129, in mogrify
+    query = query % self._escape_args(args, conn)
+            ~~~~~~^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+TypeError: not enough arguments for format string
+
+2025-06-13 22:57:57 | ERROR | not enough arguments for format string
+2025-06-13 22:57:57 | ERROR | Traceback (most recent call last):
+  File "C:\Users\fedgr\Desktop\api_rest_bodega\src\routes\grafic_gananciasRoutes.py", line 141, in listar_ganancias
+    cursor.execute(sql, params)
+  File "C:\Users\fedgr\Desktop\api_rest_bodega\venv\Lib\site-packages\pymysql\cursors.py", line 151, in execute
+    query = self.mogrify(query, args)
+            ^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\fedgr\Desktop\api_rest_bodega\venv\Lib\site-packages\pymysql\cursors.py", line 129, in mogrify
+    query = query % self._escape_args(args, conn)
+            ~~~~~~^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+TypeError: not enough arguments for format string
+
+2025-06-13 22:58:23 | ERROR | not enough arguments for format string
+2025-06-13 22:58:23 | ERROR | Traceback (most recent call last):
+  File "C:\Users\fedgr\Desktop\api_rest_bodega\src\routes\grafic_gananciasRoutes.py", line 141, in listar_ganancias
+    cursor.execute(sql, params)
+  File "C:\Users\fedgr\Desktop\api_rest_bodega\venv\Lib\site-packages\pymysql\cursors.py", line 151, in execute
+    query = self.mogrify(query, args)
+            ^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\fedgr\Desktop\api_rest_bodega\venv\Lib\site-packages\pymysql\cursors.py", line 129, in mogrify
+    query = query % self._escape_args(args, conn)
+            ~~~~~~^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+TypeError: not enough arguments for format string
+
+2025-06-13 22:58:24 | ERROR | not enough arguments for format string
+2025-06-13 22:58:24 | ERROR | Traceback (most recent call last):
+  File "C:\Users\fedgr\Desktop\api_rest_bodega\src\routes\grafic_gananciasRoutes.py", line 141, in listar_ganancias
+    cursor.execute(sql, params)
+  File "C:\Users\fedgr\Desktop\api_rest_bodega\venv\Lib\site-packages\pymysql\cursors.py", line 151, in execute
+    query = self.mogrify(query, args)
+            ^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\fedgr\Desktop\api_rest_bodega\venv\Lib\site-packages\pymysql\cursors.py", line 129, in mogrify
+    query = query % self._escape_args(args, conn)
+            ~~~~~~^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+TypeError: not enough arguments for format string
+
+2025-06-13 23:03:40 | ERROR | not enough arguments for format string
+2025-06-13 23:03:40 | ERROR | Traceback (most recent call last):
+  File "C:\Users\fedgr\Desktop\api_rest_bodega\src\routes\grafic_gananciasRoutes.py", line 141, in listar_ganancias
+    cursor.execute(sql, params)
+  File "C:\Users\fedgr\Desktop\api_rest_bodega\venv\Lib\site-packages\pymysql\cursors.py", line 151, in execute
+    query = self.mogrify(query, args)
+            ^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\fedgr\Desktop\api_rest_bodega\venv\Lib\site-packages\pymysql\cursors.py", line 129, in mogrify
+    query = query % self._escape_args(args, conn)
+            ~~~~~~^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+TypeError: not enough arguments for format string
+
+2025-06-13 23:07:37 | ERROR | not enough arguments for format string
+2025-06-13 23:07:37 | ERROR | Traceback (most recent call last):
+  File "C:\Users\fedgr\Desktop\api_rest_bodega\src\routes\grafic_gananciasRoutes.py", line 141, in listar_ganancias
+    cursor.execute(sql, params_semanal)
+  File "C:\Users\fedgr\Desktop\api_rest_bodega\venv\Lib\site-packages\pymysql\cursors.py", line 151, in execute
+    query = self.mogrify(query, args)
+            ^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\fedgr\Desktop\api_rest_bodega\venv\Lib\site-packages\pymysql\cursors.py", line 129, in mogrify
+    query = query % self._escape_args(args, conn)
+            ~~~~~~^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+TypeError: not enough arguments for format string
+
+2025-06-13 23:07:43 | ERROR | not enough arguments for format string
+2025-06-13 23:07:43 | ERROR | Traceback (most recent call last):
+  File "C:\Users\fedgr\Desktop\api_rest_bodega\src\routes\grafic_gananciasRoutes.py", line 141, in listar_ganancias
+    cursor.execute(sql, params_semanal)
+  File "C:\Users\fedgr\Desktop\api_rest_bodega\venv\Lib\site-packages\pymysql\cursors.py", line 151, in execute
+    query = self.mogrify(query, args)
+            ^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\fedgr\Desktop\api_rest_bodega\venv\Lib\site-packages\pymysql\cursors.py", line 129, in mogrify
+    query = query % self._escape_args(args, conn)
+            ~~~~~~^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+TypeError: not enough arguments for format string
+
+2025-06-13 23:07:46 | ERROR | not enough arguments for format string
+2025-06-13 23:07:46 | ERROR | Traceback (most recent call last):
+  File "C:\Users\fedgr\Desktop\api_rest_bodega\src\routes\grafic_gananciasRoutes.py", line 141, in listar_ganancias
+    cursor.execute(sql, params_semanal)
+  File "C:\Users\fedgr\Desktop\api_rest_bodega\venv\Lib\site-packages\pymysql\cursors.py", line 151, in execute
+    query = self.mogrify(query, args)
+            ^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\fedgr\Desktop\api_rest_bodega\venv\Lib\site-packages\pymysql\cursors.py", line 129, in mogrify
+    query = query % self._escape_args(args, conn)
+            ~~~~~~^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+TypeError: not enough arguments for format string
+
+2025-06-13 23:26:09 | ERROR | not enough arguments for format string
+2025-06-13 23:26:09 | ERROR | Traceback (most recent call last):
+  File "C:\Users\fedgr\Desktop\api_rest_bodega\src\routes\grafic_gananciasRoutes.py", line 236, in listar_ganancias
+    cursor.execute(sql, params_semanal)
+  File "C:\Users\fedgr\Desktop\api_rest_bodega\venv\Lib\site-packages\pymysql\cursors.py", line 151, in execute
+    query = self.mogrify(query, args)
+            ^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\fedgr\Desktop\api_rest_bodega\venv\Lib\site-packages\pymysql\cursors.py", line 129, in mogrify
+    query = query % self._escape_args(args, conn)
+            ~~~~~~^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+TypeError: not enough arguments for format string
+
+2025-06-13 23:26:10 | ERROR | not enough arguments for format string
+2025-06-13 23:26:10 | ERROR | Traceback (most recent call last):
+  File "C:\Users\fedgr\Desktop\api_rest_bodega\src\routes\grafic_gananciasRoutes.py", line 236, in listar_ganancias
+    cursor.execute(sql, params_semanal)
+  File "C:\Users\fedgr\Desktop\api_rest_bodega\venv\Lib\site-packages\pymysql\cursors.py", line 151, in execute
+    query = self.mogrify(query, args)
+            ^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\fedgr\Desktop\api_rest_bodega\venv\Lib\site-packages\pymysql\cursors.py", line 129, in mogrify
+    query = query % self._escape_args(args, conn)
+            ~~~~~~^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+TypeError: not enough arguments for format string
+
+2025-06-13 23:27:14 | ERROR | not enough arguments for format string
+2025-06-13 23:27:14 | ERROR | Traceback (most recent call last):
+  File "C:\Users\fedgr\Desktop\api_rest_bodega\src\routes\grafic_gananciasRoutes.py", line 236, in listar_ganancias
+    cursor.execute(sql, params_semanal)
+  File "C:\Users\fedgr\Desktop\api_rest_bodega\venv\Lib\site-packages\pymysql\cursors.py", line 151, in execute
+    query = self.mogrify(query, args)
+            ^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\fedgr\Desktop\api_rest_bodega\venv\Lib\site-packages\pymysql\cursors.py", line 129, in mogrify
+    query = query % self._escape_args(args, conn)
+            ~~~~~~^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+TypeError: not enough arguments for format string
+
+2025-06-13 23:31:07 | ERROR | 'str' object has no attribute 'strftime'
+2025-06-13 23:31:07 | ERROR | Traceback (most recent call last):
+  File "C:\Users\fedgr\Desktop\api_rest_bodega\src\routes\grafic_gananciasRoutes.py", line 243, in listar_ganancias
+    fecha_diaria = fila["periodo_mensual"].strftime('%Y-%m')
+                 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+AttributeError: 'str' object has no attribute 'strftime'
+
+2025-06-18 11:44:14 | ERROR | (1136, "Column count doesn't match value count at row 1")
+2025-06-18 11:44:14 | ERROR | Traceback (most recent call last):
+  File "C:\Users\fedgr\Desktop\api_rest_bodega\src\routes\ContabilidadRoutes.py", line 266, in insertar_contabilidad
+    cursor.execute(sql, values)
+  File "C:\Users\fedgr\Desktop\api_rest_bodega\venv\Lib\site-packages\pymysql\cursors.py", line 153, in execute
+    result = self._query(query)
+             ^^^^^^^^^^^^^^^^^^
+  File "C:\Users\fedgr\Desktop\api_rest_bodega\venv\Lib\site-packages\pymysql\cursors.py", line 322, in _query
+    conn.query(q)
+  File "C:\Users\fedgr\Desktop\api_rest_bodega\venv\Lib\site-packages\pymysql\connections.py", line 563, in query
+    self._affected_rows = self._read_query_result(unbuffered=unbuffered)
+                          ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\fedgr\Desktop\api_rest_bodega\venv\Lib\site-packages\pymysql\connections.py", line 825, in _read_query_result
+    result.read()
+  File "C:\Users\fedgr\Desktop\api_rest_bodega\venv\Lib\site-packages\pymysql\connections.py", line 1199, in read
+    first_packet = self.connection._read_packet()
+                   ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\fedgr\Desktop\api_rest_bodega\venv\Lib\site-packages\pymysql\connections.py", line 775, in _read_packet
+    packet.raise_for_error()
+  File "C:\Users\fedgr\Desktop\api_rest_bodega\venv\Lib\site-packages\pymysql\protocol.py", line 219, in raise_for_error
+    err.raise_mysql_exception(self._data)
+  File "C:\Users\fedgr\Desktop\api_rest_bodega\venv\Lib\site-packages\pymysql\err.py", line 150, in raise_mysql_exception
+    raise errorclass(errno, errval)
+pymysql.err.OperationalError: (1136, "Column count doesn't match value count at row 1")
+
+2025-06-18 12:50:02 | ERROR | 'decimal.Decimal' object is not subscriptable
+2025-06-18 12:50:02 | ERROR | Traceback (most recent call last):
+  File "C:\Users\fedgr\Desktop\api_rest_bodega\src\routes\grafic_gananciasRoutes.py", line 89, in listar_ganancias
+    rend= (ganancias_ventas[i]/lista_ventas[i])*100
+           ~~~~~~~~~~~~~~~~^^^
+TypeError: 'decimal.Decimal' object is not subscriptable
+
+2025-06-18 12:50:59 | ERROR | 'decimal.Decimal' object is not subscriptable
+2025-06-18 12:50:59 | ERROR | Traceback (most recent call last):
+  File "C:\Users\fedgr\Desktop\api_rest_bodega\src\routes\grafic_gananciasRoutes.py", line 89, in listar_ganancias
+    rend= (ganancias_ventas[i]/lista_ventas[i])*100
+           ~~~~~~~~~~~~~~~~^^^
+TypeError: 'decimal.Decimal' object is not subscriptable
+
+2025-06-18 12:52:45 | ERROR | 'decimal.Decimal' object is not subscriptable
+2025-06-18 12:52:45 | ERROR | Traceback (most recent call last):
+  File "C:\Users\fedgr\Desktop\api_rest_bodega\src\routes\grafic_gananciasRoutes.py", line 89, in listar_ganancias
+    rend= (ganancias_ventas[i]/lista_ventas[i])*100
+           ~~~~~~~~~~~~~~~~^^^
+TypeError: 'decimal.Decimal' object is not subscriptable
+
+2025-06-18 12:54:23 | ERROR | 'decimal.Decimal' object is not subscriptable
+2025-06-18 12:54:23 | ERROR | Traceback (most recent call last):
+  File "C:\Users\fedgr\Desktop\api_rest_bodega\src\routes\grafic_gananciasRoutes.py", line 89, in listar_ganancias
+    rend= (ganancias_ventas[i]/lista_ventas[i])*100
+           ~~~~~~~~~~~~~~~~^^^
+TypeError: 'decimal.Decimal' object is not subscriptable
+
+2025-06-18 12:54:53 | ERROR | 'decimal.Decimal' object is not subscriptable
+2025-06-18 12:54:53 | ERROR | Traceback (most recent call last):
+  File "C:\Users\fedgr\Desktop\api_rest_bodega\src\routes\grafic_gananciasRoutes.py", line 89, in listar_ganancias
+    rend= (ganancias_ventas[i]/lista_ventas[i])*100.00
+           ~~~~~~~~~~~~~~~~^^^
+TypeError: 'decimal.Decimal' object is not subscriptable
+
+2025-06-18 13:00:00 | ERROR | 'decimal.Decimal' object is not subscriptable
+2025-06-18 13:00:00 | ERROR | Traceback (most recent call last):
+  File "C:\Users\fedgr\Desktop\api_rest_bodega\src\routes\grafic_gananciasRoutes.py", line 89, in listar_ganancias
+    rend= (ganancias_ventas[i]/lista_ventas[i])*100.00
+           ~~~~~~~~~~~~~~~~^^^
+TypeError: 'decimal.Decimal' object is not subscriptable
+
+2025-06-18 13:00:32 | ERROR | 'decimal.Decimal' object is not subscriptable
+2025-06-18 13:00:32 | ERROR | Traceback (most recent call last):
+  File "C:\Users\fedgr\Desktop\api_rest_bodega\src\routes\grafic_gananciasRoutes.py", line 89, in listar_ganancias
+    rend= (ganancias_ventas[i]/lista_ventas[i])*100.00
+           ~~~~~~~~~~~~~~~~^^^
+TypeError: 'decimal.Decimal' object is not subscriptable
+
+2025-06-18 13:01:58 | ERROR | 'decimal.Decimal' object is not subscriptable
+2025-06-18 13:01:58 | ERROR | Traceback (most recent call last):
+  File "C:\Users\fedgr\Desktop\api_rest_bodega\src\routes\grafic_gananciasRoutes.py", line 89, in listar_ganancias
+    rend= (ganancias_ventas[i]/lista_ventas[i])*100.00
+           ~~~~~~~~~~~~~~~~^^^
+TypeError: 'decimal.Decimal' object is not subscriptable
+
+2025-06-18 13:05:10 | ERROR | unsupported operand type(s) for *: 'decimal.Decimal' and 'float'
+2025-06-18 13:05:10 | ERROR | Traceback (most recent call last):
+  File "C:\Users\fedgr\Desktop\api_rest_bodega\src\routes\grafic_gananciasRoutes.py", line 89, in listar_ganancias
+    rend= (lista_ganancias_ventas[i]/lista_ventas[i])*100.00
+          ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~^^~~~~~
+TypeError: unsupported operand type(s) for *: 'decimal.Decimal' and 'float'
+
+2025-06-18 13:10:14 | ERROR | name 'Decimal' is not defined
+2025-06-18 13:10:14 | ERROR | Traceback (most recent call last):
+  File "C:\Users\fedgr\Desktop\api_rest_bodega\src\routes\grafic_gananciasRoutes.py", line 89, in listar_ganancias
+    rend= (lista_ganancias_ventas[i]/lista_ventas[i])*Decimal("100.00")
+                                                      ^^^^^^^
+NameError: name 'Decimal' is not defined
+
+2025-06-18 13:16:43 | ERROR | name 'dos_decimales' is not defined
+2025-06-18 13:16:43 | ERROR | Traceback (most recent call last):
+  File "C:\Users\fedgr\Desktop\api_rest_bodega\src\routes\grafic_gananciasRoutes.py", line 91, in listar_ganancias
+    rend = rend.quantize(dos_decimales, rounding=ROUND_HALF_UP)
+                         ^^^^^^^^^^^^^
+NameError: name 'dos_decimales' is not defined
+
+2025-06-18 13:45:02 | ERROR | 'ventas_semanal'
+2025-06-18 13:45:02 | ERROR | Traceback (most recent call last):
+  File "C:\Users\fedgr\Desktop\api_rest_bodega\src\routes\grafic_gananciasRoutes.py", line 357, in listar_ganancias
+    ventas=fila["ventas_semanal"]
+           ~~~~^^^^^^^^^^^^^^^^^^
+KeyError: 'ventas_semanal'
+
+2025-06-18 13:45:04 | ERROR | 'ventas_semanal'
+2025-06-18 13:45:04 | ERROR | Traceback (most recent call last):
+  File "C:\Users\fedgr\Desktop\api_rest_bodega\src\routes\grafic_gananciasRoutes.py", line 357, in listar_ganancias
+    ventas=fila["ventas_semanal"]
+           ~~~~^^^^^^^^^^^^^^^^^^
+KeyError: 'ventas_semanal'
+
